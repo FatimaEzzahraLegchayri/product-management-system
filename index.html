@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+            <H6>PRODUCT MANAGEMENT SYSTEM</H6>
+    </header>
+    <div class="cruds">
+        <div class="inputs">
+            <div class="price">
+                <input id="title" class="title input toUpdate" type="text" placeholder="Title">
+                <input class="input toUpdate" onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                <input class="input toUpdate" onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes">
+                <input class="input toUpdate" onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+                <input class="input toUpdate" onkeyup="getTotal()" type="number" id="discount" placeholder="Discout">
+                <button id="total" class="total toUpdate" > total:</button>
+                
+                <input id="count" class="title input toUpdate" type="number" placeholder="Count">
+                <input id="category" class="title input toUpdate" type="text" placeholder="Category">
+                <button type="submit" id="submit" class="create">Create</button>
+            </div>
+        </div>
+        
+        <div class="outputs">
+            <input class="title" onkeyup="searchData(this.value)" type="text" id="search" placeholder="Seach by title">
+            <button class="title deleteAll" id="deleteAll"></button>
+            <table>
+                <tr class="row" id="row">
+                    <th>Id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody class="tbody" id="tbody">
+                    <!-- <tr>
+                    <td>1</td>r
+                    <td>${table.title}</td>
+                    <td>1000</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>19</td>
+                    <td>46</td>
+                    <td>phone</td>
+                    <td <i class='bx bx-edit' ></i></td>
+                    <td <i class='bx bx-trash'></i></td>
+                    </tr> -->
+                </tbody>
+                
+            </table>
+            <div class="message" id="message"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
