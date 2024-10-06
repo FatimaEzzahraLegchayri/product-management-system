@@ -1,0 +1,33 @@
+/* @media (max-width : 480px) {
+    .cruds{
+        display: block;
+        position:relative ;
+        height: 100vh;
+        background-color: red;
+        width: 100vw;
+    }
+    .inputs{
+        width: 96%;
+    }
+    .price{
+        display: block;
+        
+    }
+} */
+ 
+@media (max-width: 480px) {
+    .cruds {
+        display: block; /* Change from flex to block */
+        padding: 10px; /* Adjust padding if needed */
+    }
+
+    .inputs {
+        position: static; /* Remove sticky position */
+        width: 100%; /* Ensure it takes full width */
+        margin-bottom: 20px; /* Add some space below */
+        padding-bottom: 8em
+    }
+    .outputs{
+        width: 90%;
+    }
+}
